@@ -1,0 +1,37 @@
+
+.service{
+  background-color: rgb(0, 255, 106);
+  position: relative;
+   -webkit-transform: perspective(0) skewY(6deg); 
+   transform: perspective(0) skewY(6deg);
+   padding: 80px 0;
+  .container{
+    -webkit-transform: perspective(0) skewY(-6deg); 
+    transform: perspective(0) skewY(-6deg);
+    width: 85%;
+    margin:  0 auto;
+    text-align: center;
+    h1 {font-size: 2rem;}
+    .details{ display:  flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    .detail-catch {
+      width: calc( 100% / 4 );
+      img {width: 80%;}
+    p {margin: 10px;}
+}
+    }
+  }
+}
+
+@media (max-width: 767px){
+ .service{
+   .container{
+     .details{
+       .detail-catch{
+         width:100%;
+         margin-bottom: 30px;
+       }
+     }
+   }
+}
